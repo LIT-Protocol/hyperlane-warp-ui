@@ -58,6 +58,82 @@ export const warpRouteConfigs: WarpCoreConfig = {
       standard: TokenStandard.EvmHypSynthetic,
       symbol: 'tstLPX',
     },
+    {
+      addressOrDenom: '0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+      chainName: 'basesepolia',
+      connections: [
+        {
+          token: 'ethereum|chronicleyellowstone|0x90e117B2f0f8635A0e35e5a265Ff5E32DcD1CF67',
+        },
+        {
+          token: 'ethereum|polygonamoy|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+        {
+          token: 'ethereum|sepolia|0x415392717924bC169EebB80e43e7e6eB717AF1e8',
+        },
+      ],
+      decimals: 18,
+      name: 'Test LPX',
+      standard: TokenStandard.EvmHypSynthetic,
+      symbol: 'tstLPX',
+    },
+    {
+      addressOrDenom: '0x90e117B2f0f8635A0e35e5a265Ff5E32DcD1CF67',
+      chainName: 'chronicleyellowstone',
+      connections: [
+        {
+          token: 'ethereum|basesepolia|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+        {
+          token: 'ethereum|polygonamoy|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+        {
+          token: 'ethereum|sepolia|0x415392717924bC169EebB80e43e7e6eB717AF1e8',
+        },
+      ],
+      decimals: 18,
+      name: 'Test LPX',
+      standard: TokenStandard.EvmHypNative,
+      symbol: 'tstLPX',
+    },
+    {
+      addressOrDenom: '0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+      chainName: 'polygonamoy',
+      connections: [
+        {
+          token: 'ethereum|basesepolia|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+        {
+          token: 'ethereum|chronicleyellowstone|0x90e117B2f0f8635A0e35e5a265Ff5E32DcD1CF67',
+        },
+        {
+          token: 'ethereum|sepolia|0x415392717924bC169EebB80e43e7e6eB717AF1e8',
+        },
+      ],
+      decimals: 18,
+      name: 'Test LPX',
+      standard: TokenStandard.EvmHypSynthetic,
+      symbol: 'tstLPX',
+    },
+    {
+      addressOrDenom: '0x415392717924bC169EebB80e43e7e6eB717AF1e8',
+      chainName: 'sepolia',
+      connections: [
+        {
+          token: 'ethereum|basesepolia|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+        {
+          token: 'ethereum|chronicleyellowstone|0x90e117B2f0f8635A0e35e5a265Ff5E32DcD1CF67',
+        },
+        {
+          token: 'ethereum|polygonamoy|0x53B886349F69Ea6b4E24143B738128aB572Dd361',
+        },
+      ],
+      decimals: 18,
+      name: 'Test LPX',
+      standard: TokenStandard.EvmHypSynthetic,
+      symbol: 'tstLPX',
+    },
   ],
   options: {},
 };

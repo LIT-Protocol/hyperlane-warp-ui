@@ -1,4 +1,11 @@
-import { arbitrumsepolia, chronicleyellowstone, optimismsepolia } from '@hyperlane-xyz/registry';
+import {
+  arbitrumsepolia,
+  basesepolia,
+  chronicleyellowstone,
+  optimismsepolia,
+  polygonamoy,
+  sepolia,
+} from '@hyperlane-xyz/registry';
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
 
 // A map of chain names to ChainMetadata
@@ -23,6 +30,24 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     rpcUrls: process.env.NEXT_PUBLIC_OPTIMISM_SEPOLIA_RPC_URL
       ? [{ http: process.env.NEXT_PUBLIC_OPTIMISM_SEPOLIA_RPC_URL }, ...optimismsepolia.rpcUrls]
       : optimismsepolia.rpcUrls,
+  },
+  sepolia: {
+    ...sepolia,
+    rpcUrls: process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL
+      ? [{ http: process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL }, ...sepolia.rpcUrls]
+      : sepolia.rpcUrls,
+  },
+  polygonamoy: {
+    ...polygonamoy,
+    rpcUrls: process.env.NEXT_PUBLIC_POLYGON_AMOY_RPC_URL
+      ? [{ http: process.env.NEXT_PUBLIC_POLYGON_AMOY_RPC_URL }, ...polygonamoy.rpcUrls]
+      : polygonamoy.rpcUrls,
+  },
+  basesepolia: {
+    ...basesepolia,
+    rpcUrls: process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL
+      ? [{ http: process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL }, ...basesepolia.rpcUrls]
+      : basesepolia.rpcUrls,
   },
   // mycustomchain: {
   //   protocol: ProtocolType.Ethereum,

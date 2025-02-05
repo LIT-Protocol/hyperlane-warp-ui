@@ -19,7 +19,6 @@ const footerLinks: FooterLink[] = [
   { title: 'Privacy', url: links.privacyPolicy, external: true },
   { title: 'Discord', url: links.discord, external: true, icon: <DiscordIcon color="#fff" /> },
   { title: 'Explorer', url: links.explorer, external: true },
-  { title: 'Bounty', url: links.bounty, external: true },
   { title: 'Github', url: links.github, external: true, icon: <GithubIcon color="#fff" /> },
 ];
 
@@ -28,7 +27,7 @@ export function Footer() {
     <footer className="relative text-white">
       <div className="relative bg-gradient-to-b from-transparent to-black/40 px-8 pb-5 pt-2 sm:pt-0">
         <div className="flex flex-col items-center justify-between gap-8 sm:flex-row sm:gap-10">
-          <FooterLogo />
+          {/* <FooterLogo /> */}
           <FooterNav />
         </div>
       </div>
