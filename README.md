@@ -1,6 +1,8 @@
-# Hyperlane Warp Route UI Template
+# Lit Protocol Bridge UI
 
-This repo contains an example web interface for interchain tokens built with [Hyperlane Warp Route](https://docs.hyperlane.xyz/docs/reference/applications/warp-routes). Warp is a framework to permissionlessly bridge tokens to any chain.
+Deployed at https://bridge.litprotocol.com
+
+This repo is a customized version of an example web interface for interchain tokens built with [Hyperlane Warp Route](https://docs.hyperlane.xyz/docs/reference/applications/warp-routes). Warp is a framework to permissionlessly bridge tokens to any chain. This uses the [Hyperlane Warp Route UI Template](https://github.com/hyperlane-xyz/hyperlane-warp-ui-template) project.
 
 ## Architecture
 
@@ -63,7 +65,7 @@ yarn prettier
 ### Clean / Reset
 
 ```sh
-# Delete build artifacts to start fresh 
+# Delete build artifacts to start fresh
 yarn clean
 ```
 
